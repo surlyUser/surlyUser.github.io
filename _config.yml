@@ -1,0 +1,25 @@
+# Basic info
+title: My Linux & Jekyll Blog
+description: My first SSG site - don't get too excited!
+baseurl: "" # Leer, wenn die Seite direkt unter meinname.github.io erreichbar ist
+url: "https://surlyUser.github.io"
+
+# Theme
+remote_theme: daattali/beautiful-jekyll
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  
+# Navbar links
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdownguide.org/"
+
+# Author info
+author:
+  name: My Name
