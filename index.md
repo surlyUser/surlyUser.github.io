@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title: "Mein neuer Blogpost"
 date: 2026-03-06
 ---
