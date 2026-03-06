@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mein neuer Blogpost"
+title: "Mein neuer Test"
 date: 2026-03-06
 ---
 
