@@ -4,7 +4,7 @@ title: "Mein neuer Blogpost"
 date: 2026-03-06
 ---
 
-# Home
+# Project
 
 ## Links
 [Home](./index.html)
