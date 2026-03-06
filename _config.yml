@@ -5,7 +5,8 @@ baseurl: "" # Leer, wenn die Seite direkt unter meinname.github.io erreichbar is
 url: "https://surlyUser.github.io"
 
 # Theme
-remote_theme: daattali/beautiful-jekyll
+#remote_theme: daattali/beautiful-jekyll
+theme: minima
 
 # Plugins
 plugins:
