@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "New Title"
+title: "Home"
 date: 2026-03-06
 ---
 
