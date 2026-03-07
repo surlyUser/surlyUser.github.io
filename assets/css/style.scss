@@ -1,6 +1,24 @@
 ---
 ---
 @import 'jekyll-theme-architect';
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bcccdd;
+  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+}
+
+a {
+  color: #ddddbc;
+}
+a:hover {
+  color: #ddbdbc;
+}
+
 header {
-background: #DDCDBC
+  background: #DDCDBC;
+  border-bottom: solid 1px #c3a789;
 }
