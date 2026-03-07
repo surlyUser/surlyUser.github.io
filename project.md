@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Project"
 date: 2026-03-06
 ---

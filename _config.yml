@@ -5,8 +5,8 @@ baseurl: "" # Leer, wenn die Seite direkt unter meinname.github.io erreichbar is
 url: "https://surlyUser.github.io"
 
 # Theme
-#remote_theme: daattali/beautiful-jekyll
-remote_theme: pages-themes/modernist@v0.2.0
+remote_theme: daattali/beautiful-jekyll
+# remote_theme: pages-themes/modernist@v0.2.0
 #theme: minima
 
 # Plugins
@@ -17,7 +17,9 @@ plugins:
   
 # Navbar links
 navbar-links:
-  About Me: "aboutme"
+  Home: "index"
+  Project: "project"
+  About: "about"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdownguide.org/"
@@ -25,3 +27,6 @@ navbar-links:
 # Author info
 author:
   name: My Name
+  
+# Social media
+  social-share: false
