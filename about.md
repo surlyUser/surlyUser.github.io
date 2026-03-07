@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "About"
 date: 2026-03-06
 ---

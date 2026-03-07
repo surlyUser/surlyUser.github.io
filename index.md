@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "Home"
 date: 2026-03-06
 ---
