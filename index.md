@@ -5,3 +5,4 @@ layout: default
 
 # Home
 
+![Mein lokales Bild]({{ site.baseurl }}/assets/img/alpen.jpg)
