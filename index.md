@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
+[Home](./index.html) | [Project](./project.html) | [About](./about.html)
 
 # Home
 
-## Links
-[Home](./index.html)
-[Project](./project.html)
-[About](./about.html)
