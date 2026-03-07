@@ -1,13 +1,10 @@
 ---
 layout: default
-title: "About"
-date: 2026-03-06
 ---
 
-# About
+# Home
 
 ## Links
 [Home](./index.html)
 [Project](./project.html)
 [About](./about.html)
-

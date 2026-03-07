@@ -1,32 +1,16 @@
 # Basic info
 title: Test Title
 description: My first SSG site - don't get too excited!
+show-downloads: true
+google analytics: 
 baseurl: "" # Leer, wenn die Seite direkt unter meinname.github.io erreichbar ist
 url: "https://surlyUser.github.io"
 
 # Theme
-remote_theme: daattali/beautiful-jekyll
-# remote_theme: pages-themes/modernist@v0.2.0
-#theme: minima
+# remote_theme: daattali/beautiful-jekyll
+remote_theme: pages-themes/architect@v0.2.0
 
 # Plugins
 plugins:
   - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-seo-tag
-  
-# Navbar links
-navbar-links:
-  Home: "index"
-  Project: "project"
-  About: "about"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdownguide.org/"
 
-# Author info
-author:
-  name: My Name
-  
-# Social media
-  social-share: false
