@@ -102,7 +102,7 @@ date: 2026-03-06
 
 ### More Advanced Themes
 
-Most themes are built upon the basic settings mentioned above, although *fancier* themes
+Many themes are built upon the basic settings mentioned above, although *fancier* themes
 often require additional structures and configurations.
 
 The *Beautiful Jekyll* theme is a prime example of a more sophisticated approach to creating and customizing a website.
@@ -119,7 +119,7 @@ An example of this is shown below:
 layout: page
 ---
 
-<!-- content: placeholder for referencing file -->
+<!-- content: placeholder for the content of the file using this layout -->
 {{ content }}
 
 {% assign posts = paginator.posts | default: site.posts %}
