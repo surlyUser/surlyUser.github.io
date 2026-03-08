@@ -11,12 +11,23 @@ date: 2026-03-06
 
 Für das Fach WMC soll mit Hilfe von GitHub Pages eine Website erstellt werden.
 Normalerweise verwendet man für eine einfache Website CSS, HTML und JavaScript, wobei
-komplexere Seiten auch noch Datenbanken, jQuery, React und viele weitere Tools verwenden.
-Bei einem GET-request wird dann aus allen den fIles und Daten dynamisch eine Seite erstellt und im Browser des Users dargestellt. Das dauert eine gewisse Zeit und ist anfällig für Hack-Angriffe.
+komplexere Seiten auch noch Datenbanken, jQuery, React, CMS und viele weitere Tools verwenden.
+Bei einem GET-request wird dann aus allen den fIles und Daten dynamisch eine Seite erstellt und im Browser des Users dargestellt. Das dauert eine gewisse Zeit und ist anfällig für Hacker-Angriffe.
 
-GitHub Pages arbeitet nach dem SSG-Prinzip (Static Site Generator), das heißt es wird mit Hilfe eines Generators eine statische Seite erstellt. Diese wird dann schon im Vorfeld erstellt und somit auf Anfrage eines Clients die fertige Seite gesendet.
+GitHub Pages arbeitet nach dem SSG-Prinzip (Static Site Generator), das heißt es wird mit Hilfe eines Generators eine statische Seite erstellt. Diese wird dann schon im Vorfeld erstellt
+und somit auf Anfrage eines Clients die fertige Seite gesendet.
 Das ist schneller und sicherer als die zuvor erwähnte dynamische Variante.
-Diese Methode eignet sich jedoch nur für einfachere, statische Seiten.
+Mittlerweile können damit auch komplexere, dynamische Seiten kreiert werden - Stichwort JAMstack.
+
+
+### Basic Tools For Github Pages
+
+Für einfachere Seiten bzw. Themes verwendet man hauptsächlich:
+
+- Jekyll als SSG (Standard bei Github; andere möglich)
+- md-Files für die Inhalte
+- eigene HTML- und CSS-Files um individuelle Anpassungen zu machen (Override Theme)
+- Liquid für die Templates
 
 
 ## Different Ways To Create A Site
@@ -85,3 +96,38 @@ date: 2026-03-06
 
 ### More Advanced Themes
 
+Die meisten Themes bauen auf die eben erwähnten Basic-Setting auf, wobei *fancier* Themes oft zusätzliche Strukturen und Settings erfordern.
+
+Das Theme *Beautiful Jekyll* ist ein Beispiel für etwas mehr Aufwand bezüglich der Erstellung und Anpassung einer Website.
+Wer sich das Repositry ansieht, wird feststellen, dass es hier viel mehr Files und Folder gibt, die ein feineres bzw. gezielteres Design ermöglichen
+out-of-the-box ermöglichen.
+
+Die Basics bleiben gleich, jedoch ist die Verschachtelung der Dateien untereinander schon komplexer.
+
+Ein Beispiel dafür:
+
+```html
+---
+layout: page
+---
+
+<!-- content: Platzhalter für den Inhalt der referenzierenden Datei -->
+{{ content }}
+
+{% assign posts = paginator.posts | default: site.posts %}
+
+<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+<ul class="posts-list list-unstyled" role="list">
+  {% for post in posts %}
+  <li class="post-preview">
+    <article>
+
+      {%- capture thumbnail -%}
+        {% if post.thumbnail-img %}
+          {{ post.thumbnail-img }}
+....usw.....
+```
+
+Typische File-Struktur: 
+
+![Folder example]({{ site.baseurl }}/assets/img/folder_example.JPG)

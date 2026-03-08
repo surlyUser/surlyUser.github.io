@@ -1,10 +1,20 @@
 ---
 layout: default
-title: "About"
-date: 2026-03-06
+title: About
 ---
 [Home](./index.html) \| [Project](./project.html) \| [About](./about.html)
 
 # About
 
+My name is Inigo Montoya. I have the following qualities:
 
+- I rock a great mustache
+- I'm extremely loyal to my family
+
+What else do you need?
+
+## My story
+
+Once upon a time...
+
+To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
