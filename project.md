@@ -113,6 +113,7 @@ While the fundamentals remain the same, the nesting and interdependence of the f
 
 An example of this is shown below:
 
+{% raw %}
 ```html
 ---
 layout: page
@@ -127,6 +128,7 @@ layout: page
 
 
 ```
+{% endraw %}
 
 Typical folder-structure: 
 
