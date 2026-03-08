@@ -119,7 +119,7 @@ An example of this is shown below:
 layout: page
 ---
 
-<!-- content: placeholder for referenced file -->
+<!-- content: placeholder for referencing file -->
 {{ content }}
 
 {% assign posts = paginator.posts | default: site.posts %}
