@@ -9,60 +9,66 @@ date: 2026-03-06
 
 ## GitHub Pages
 
-Für das Fach WMC soll mit Hilfe von GitHub Pages eine Website erstellt werden.
-Normalerweise verwendet man für eine einfache Website CSS, HTML und JavaScript, wobei
-komplexere Seiten auch noch Datenbanken, jQuery, React, CMS und viele weitere Tools verwenden.
-Bei einem GET-request wird dann aus allen den fIles und Daten dynamisch eine Seite erstellt und im Browser des Users dargestellt. Das dauert eine gewisse Zeit und ist anfällig für Hacker-Angriffe.
+For the WMC course, a website is to be developed using GitHub Pages.
 
-GitHub Pages arbeitet nach dem SSG-Prinzip (Static Site Generator), das heißt es wird mit Hilfe eines Generators eine statische Seite erstellt. Diese wird dann schon im Vorfeld erstellt
-und somit auf Anfrage eines Clients die fertige Seite gesendet.
-Das ist schneller und sicherer als die zuvor erwähnte dynamische Variante.
-Mittlerweile können damit auch komplexere, dynamische Seiten kreiert werden - Stichwort JAMstack.
+Typically, simple websites are built using HTML, CSS, and JavaScript.
+More complex sites often incorporate databases, jQuery, React, CMS platforms, and various other tools.
+In these cases, a GET request triggers the server to dynamically assemble the page from all available files and data
+before displaying it in the user's browser. This process takes time and can be vulnerable to security threats.
+
+GitHub Pages, however, follows the SSG (Static Site Generator) principle.
+This means a generator is used to create a static version of the site in advance.
+Consequently, when a client sends a request, the pre-built, finished page is delivered immediately.
+This approach is both faster and more secure than the aforementioned dynamic method.
+
+Today, even complex and highly dynamic websites can be created this way—often referred to as the JAMstack.
 
 
 ### Basic Tools For Github Pages
 
-Für einfachere Seiten bzw. Themes verwendet man hauptsächlich:
+For simpler sites and themes, the following components are primarily used:
 
-- Jekyll als SSG (Standard bei Github; andere möglich)
-- md-Files für die Inhalte
-- eigene HTML- und CSS-Files um individuelle Anpassungen zu machen (Override Theme)
-- Liquid für die Templates
+- **Jekyll as SSG:** The default Static Site Generator for GitHub Pages (though others are supported via GitHub Actions)
+- **Markdown (.md) Files:** Used for managing and structuring the actual content
+- **Custom HTML & CSS:** Implemented to perform individual adjustments and override theme defaults
+- **Liquid:** The templating engine used to bridge the gap between content (Markdown) and the final HTML layout
 
 
 ## Different Ways To Create A Site
 
 ### How To
 
-Es gibt mehrere Möglichkeiten, eine solche Seite zu erstellen:
+There are several ways to build a site like this:
 
-- Alles selbst erstellen, from scratch sozusagen
-- Ein Theme importieren und mit eigenen Files ergänzen
-- Ein Theme "Forken" und dieses als Basis für die Webseite nehmen
+- **From Scratch:** Building everything yourself for maximum control
+- **Theme Import:** Importing an existing theme and enhancing it with your own files
+- **Forking a Theme:** "Forking" a theme repository and using it as a direct foundation for your website
 
 ### Themes
 
-Folgende Seiten stellen *Themens* zur Verfügung:
+The following websites provide a wide variety of **themes**:
 
-- jekyllthemes.io: Gute Filter für Blogs, Portfolios oder Dokumentationen
-- jekyllthemes.org: Eine der ältesten und größten Sammlungen
-- jamstackthemes.dev: Moderne Übersicht über statische Webseiten-Designs
+- **jekyllthemes.io:** Offers great filtering options for blogs, portfolios, and documentations
+- **jekyllthemes.org:** One of the oldest and largest collections available
+- **jamstackthemes.dev:** A modern overview of high-performance static website designs
 
-Zusätzlich bietet GitHub auch [Standard-Themes](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) an.
+Additionally GitHub offers [Standard-Themes](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
 
 ### Getting Started
 
-Hier findet man eine [Quickstart-Anleitung](https://docs.github.com/en/pages/quickstart).
+Find a quick-start guide here: [Quickstart-Anleitung](https://docs.github.com/en/pages/quickstart).
 
 
 ## Examples
 
 ### Integrating A Theme Into Your Website
 
-Nachdem man entsprechend den Anweisungen der *Quickstart-Anleitung* eine Seite erstellt hat,
-muss man, um ein Theme zu importieren, dieses in das File **_config.yml** eintragen.
-Zusätzlich sind weitere Infos wie *title, description, plugins...* notwendig - das variert
-je nach Theme; am Besten die Anleitung des entsprechenden Themes beachten.
+After following the instructions in the *Quickstart Guide* to create your site,
+you must enter the theme of your choice into the *_config.yml* file to import it.
+
+Additionally, further information such as *title, description, and plugins* is required.
+Since these requirements vary depending on the theme, it is best to consult the specific documentation
+for the theme you are using.
 
 ```yml
 # Basic info
@@ -78,9 +84,9 @@ plugins:
   - jekyll-remote-theme
 ```
 
-Wichtig ist sind auch die sogenannten **YAML Front Matter**.
-Diese müssen ganz am Beginn der md-Files stehen und bilden den Verweis zu einem anderen Element, wie z.B. das
-html-File, in das der Inhalt des md-Files dann intgriert wird.
+The so-called **YAML Front Matter** is also essential.
+It must be placed at the very beginning of your Markdown files and serves as a reference
+to other elements, such as the HTML layout file into which the content of the Markdown file will be integrated.
 
 ```md
 ---
@@ -96,22 +102,23 @@ date: 2026-03-06
 
 ### More Advanced Themes
 
-Die meisten Themes bauen auf die eben erwähnten Basic-Setting auf, wobei *fancier* Themes oft zusätzliche Strukturen und Settings erfordern.
+Most themes are built upon the basic settings mentioned above, although *fancier* themes
+often require additional structures and configurations.
 
-Das Theme *Beautiful Jekyll* ist ein Beispiel für etwas mehr Aufwand bezüglich der Erstellung und Anpassung einer Website.
-Wer sich das Repositry ansieht, wird feststellen, dass es hier viel mehr Files und Folder gibt, die ein feineres bzw. gezielteres Design ermöglichen
-out-of-the-box ermöglichen.
+The *Beautiful Jekyll* theme is a prime example of a more sophisticated approach to creating and customizing a website.
+By examining its repository, you will notice a much larger number of files and folders,
+which enable a more refined and targeted design out-of-the-box.
 
-Die Basics bleiben gleich, jedoch ist die Verschachtelung der Dateien untereinander schon komplexer.
+While the fundamentals remain the same, the nesting and interdependence of the files are significantly more complex.
 
-Ein Beispiel dafür:
+An example of this is shown below:
 
 ```html
 ---
 layout: page
 ---
 
-<!-- content: Platzhalter für den Inhalt der referenzierenden Datei -->
+<!-- content: placeholder for referenced file -->
 {{ content }}
 
 {% assign posts = paginator.posts | default: site.posts %}
@@ -121,6 +128,6 @@ layout: page
 
 ```
 
-Typische File-Struktur: 
+Typical folder-structure: 
 
 ![Folder example]({{ site.baseurl }}/assets/img/folder_example.JPG)
