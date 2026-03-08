@@ -126,6 +126,7 @@ layout: page
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
           {{ post.thumbnail-img }}
+		{% endif %}
 {% endcomment %}
 ```
 
