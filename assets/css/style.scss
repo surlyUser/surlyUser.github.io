@@ -24,7 +24,7 @@ header {
 }
 
 #profile-picture {
-  max-width: 100%; /* Bild wird nie breiter als sein Container */
-  height: auto;    /* Proportionalität bleibt erhalten */
+  max-width: 50%;
+  height: auto;    /* keep proportion */
   display: block;
 }
