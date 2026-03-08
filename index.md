@@ -5,4 +5,6 @@ layout: default
 
 # Home
 
-![Mein lokales Bild]({{ site.baseurl }}/assets/img/alpen.jpg)
+## My SSG - Project
+
+![Welcome]({{ site.baseurl }}/assets/img/DSC06705.jpg){: #profile-picture }

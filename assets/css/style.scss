@@ -22,3 +22,9 @@ header {
   background: #DDCDBC;
   border-bottom: solid 1px #c3a789;
 }
+
+#profile-picture {
+  max-width: 100%; /* Bild wird nie breiter als sein Container */
+  height: auto;    /* Proportionalität bleibt erhalten */
+  display: block;
+}
