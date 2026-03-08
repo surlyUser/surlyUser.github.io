@@ -117,7 +117,7 @@ layout: page
 {% assign posts = paginator.posts | default: site.posts %}
 
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<--!
+{% comment %}
 <ul class="posts-list list-unstyled" role="list">
   {% for post in posts %}
   <li class="post-preview">
@@ -126,7 +126,7 @@ layout: page
       {%- capture thumbnail -%}
         {% if post.thumbnail-img %}
           {{ post.thumbnail-img }}
--->
+{% endcomment %}
 ```
 
 Typische File-Struktur: 
